@@ -18,12 +18,12 @@ async function run() {
 
     
     const orgProjects = new Projects();
-    let something = await orgProjects.getId(org, myToken, projectId)
-    console.log("something: ", something, typeof something)
+    let projectDetails = await orgProjects.getId(org, myToken, projectId)
+    
 
-    await orgProjects.getProject(org, myToken, projectId).then(data => {
-        console.log("PROJ: ", data, typeof data)
-    })
+    let id = projectDetails.organization.projectV2.id
+
+    console.log("projectDetails: ", projectDetails, id)
     
     
 

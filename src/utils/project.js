@@ -12,27 +12,7 @@ module.exports = class Projects {
     }
  
     
-    async getProject(org, myToken, projectNumber) {
-        const graphqlWithAuth = graphql.defaults({
-            headers: {
-                authorization: `token ${myToken}`,
-            },
-        });
-        
-        
-        return await graphqlWithAuth(
-            `
-            {
-                organization(login: "${org}") {
-                    projectV2(number: ${projectNumber}){
-                        id
-                    }
-                }
-            }
-            
-            `
-        );    
-    }
+    
 
     async getId(org, myToken, projectNumber) {
         const graphqlWithAuth = graphql.defaults({
