@@ -4,6 +4,7 @@ const fs = require('fs');
 const { graphql } = require("@octokit/graphql");
 const project = require('./utils/project.js');
 const { Octokit } = require("@octokit/rest");
+const Projects = require('./utils/project.js');
 
 async function run() {
     // Inputs
@@ -18,7 +19,8 @@ async function run() {
     
     const projects = new project();
     
-    let { proj } = projects.getProject(org, myToken, projectId);
+
+    let { proj } = await Projects.getProject(org, myToken, projectId)
     console.log("PROJ: ", JSON.stringify(proj), proj)
 
 
