@@ -15,7 +15,7 @@ async function run() {
     
 
 
-    
+    projectId=1
     const projects = new project();
     
     const { proj } = await projects.getProject(org, myToken, projectId);

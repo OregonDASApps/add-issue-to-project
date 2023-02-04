@@ -18,9 +18,8 @@ module.exports = class Projects {
                 authorization: `token ${myToken}`,
             },
         });
-
         
- 
+        
         return await graphqlWithAuth(
             `
             {
