@@ -11,6 +11,7 @@ async function run() {
     const myToken = core.getInput('token');
     const org = core.getInput('org').toString();
     const projectId = parseInt(core.getInput('project_id'));
+    const issueNumber = parseInt(core.getInput('issue_number'));
 
     console.log(org, typeof projectId)
     
@@ -21,9 +22,9 @@ async function run() {
     let projectDetails = await orgProjects.getId(org, myToken, projectId)
     
 
-    let id = projectDetails.organization.projectV2.id
+    let projectDetailsId = projectDetails.organization.projectV2.id
 
-    console.log("projectDetails: ", projectDetails, id)
+    console.log("projectDetails: ", projectDetails, projectDetailsId)
     
     
 
