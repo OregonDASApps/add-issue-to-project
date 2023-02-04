@@ -11,7 +11,7 @@ async function run() {
     const org = core.getInput('org');
     const projectId = parseInt(core.getInput('project_id'));
 
-    console.log(org, projectId)
+    console.log(org, typeof projectId)
     
 
 
