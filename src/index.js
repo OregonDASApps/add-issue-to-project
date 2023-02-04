@@ -20,8 +20,8 @@ async function run() {
     const orgProjects = new Projects();
     
 
-    let { proj } = await orgProjects.getProject(org, myToken, projectId)
-    console.log("PROJ: ", JSON.stringify(proj), proj)
+    let { p } = await orgProjects.getProject(org, myToken, projectId)
+    console.log("PROJ: ", p, typeof p)
 
 
     
