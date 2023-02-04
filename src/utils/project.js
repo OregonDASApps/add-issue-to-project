@@ -20,7 +20,7 @@ module.exports = class Projects {
         });
         
         
-        let data =  await graphqlWithAuth(
+        return await graphqlWithAuth(
             `
             {
                 organization(login: "${org}") {
@@ -32,9 +32,5 @@ module.exports = class Projects {
             
             `
         );    
-        
-        console.log(data)
-
-        return data;
     }
 }
