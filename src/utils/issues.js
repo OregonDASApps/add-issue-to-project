@@ -23,7 +23,7 @@ module.exports = class Issues {
         return await graphqlWithAuth(
             `
             addProjectV2ItemById(input: {
-                projectId: ${projectNumber}
+                projectId: ${projectNumber},
                 contentId: "${issueNumber}"
               }) {
                 item {
