@@ -24,7 +24,7 @@ module.exports = class Projects {
         return await graphqlWithAuth(
             `
             {
-                organization(login: ${org}) {
+                organization(login: "${org}") {
                     projectV2(number: ${projectNumber}){
                         id
                     }
