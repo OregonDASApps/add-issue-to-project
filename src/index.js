@@ -12,7 +12,7 @@ async function run() {
     const myToken = core.getInput('token');
     const org = core.getInput('org').toString();
     const projectId = parseInt(core.getInput('project_id'));
-    const issueNumber = parseInt(core.getInput('issue_number'));
+    const issueNumber = core.getInput('issue_number');
 
 
     console.log(org, typeof projectId, issueNumber)
