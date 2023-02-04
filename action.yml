@@ -10,10 +10,13 @@ inputs:
   org:
     required: false
     default: ${{ github.repository_owner }}
-  issue_number: 
+  issue-id:
     required: false
-    default: 1
-  project_id:
+    default: ''
+  issue-number:
+    required: false
+    default: 0
+  pid:
     required: true
     default: 1
 
