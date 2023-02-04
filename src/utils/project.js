@@ -34,5 +34,7 @@ module.exports = class Projects {
         );    
         
         console.log(data)
+
+        return data;
     }
 }
