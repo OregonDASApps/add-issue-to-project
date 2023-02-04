@@ -17,10 +17,10 @@ async function run() {
 
 
     
-    const projects = new projects();
+    const orgProjects = new Projects();
     
 
-    let { proj } = await projects.getProject(org, myToken, projectId)
+    let { proj } = await orgProjects.getProject(org, myToken, projectId)
     console.log("PROJ: ", JSON.stringify(proj), proj)
 
 
