@@ -22,7 +22,7 @@ module.exports = class Issues {
         });
         return await graphqlWithAuth(
             `
-            {
+            mutation (${projectNumber}: ID!, ${issueNumber}: ID!) {
             addProjectV2ItemById(input: { projectId: ${projectNumber}, contentId: ${issueNumber}}) {
                 item {
                   id
