@@ -9,13 +9,13 @@ async function run() {
     // Inputs
     const myToken = core.getInput('token');
     const org = core.getInput('org');
-    const projectId = core.getInput('project_id');
+    const projectId = parseInt(core.getInput('project_id'));
 
     console.log(org, projectId)
     
 
 
-    projectId=1
+    
     const projects = new project();
     
     const { proj } = await projects.getProject(org, myToken, projectId);
