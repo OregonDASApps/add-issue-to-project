@@ -27,7 +27,7 @@ async function run() {
 
     let projectDetailsId = projectDetails.organization.projectV2.id
 
-    let add = await repoIssue.addIssue(org, myToken, projectDetailsId, issueNumber)
+    let add = await repoIssue.addIssue(org, myToken, projectId, issueNumber)
 
     console.log("projectDetails: ", projectDetails, projectDetailsId)
     
