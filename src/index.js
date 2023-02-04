@@ -15,7 +15,7 @@ async function run() {
     const issueNumber = parseInt(core.getInput('issue_number'));
 
 
-    console.log(org, typeof projectId)
+    console.log(org, typeof projectId, issueNumber)
     
 
 
