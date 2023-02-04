@@ -14,7 +14,7 @@ module.exports = class Issues {
     
     
 
-    async getId(org, myToken, projectNumber, issueNumber) {
+    async addIssue(org, myToken, projectNumber, issueNumber) {
         const graphqlWithAuth = graphql.defaults({
             headers: {
                 authorization: `token ${myToken}`,
