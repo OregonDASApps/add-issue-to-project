@@ -19,7 +19,7 @@ async function run() {
     const projects = new project();
     
     const { proj } = await projects.getProject(org, myToken, projectId);
-    console.log("MEMBERS: ", JSON.stringify(proj))
+    console.log("PROJ: ", JSON.stringify(proj), proj)
 
 
     
