@@ -29,7 +29,7 @@ async function run() {
 
     let add = await repoIssue.addIssue(org, myToken, projectDetailsId, issueNumber)
 
-    console.log("projectDetails: ", projectDetails, projectDetailsId)
+    console.log("projectDetails: ", 4, 26)
     
     
 
