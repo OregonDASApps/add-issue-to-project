@@ -8,7 +8,7 @@ const { Octokit } = require("@octokit/rest");
 async function run() {
     // Inputs
     const myToken = core.getInput('token');
-    const org = core.getInput('org').toString;
+    const org = core.getInput('org').toString();
     const projectId = parseInt(core.getInput('project_id'));
 
     console.log(org, typeof projectId)
