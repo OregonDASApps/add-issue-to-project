@@ -5,7 +5,7 @@ inputs:
     required: false
     default: ${{ github.repository }}
   token:
-    required: false
+    required: true
     default: ${{ github.token }}  
   org:
     required: false
