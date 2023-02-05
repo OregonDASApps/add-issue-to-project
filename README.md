@@ -1,6 +1,6 @@
 # Add an issue to a project
 
-This action can add an issue to a project by passing either issue ID or issue number. This action can be added to a workflow to add an issue automatically or manually.
+This action can add an issue to a project by passing either `issue ID` or `issue number`. This action can be added to a workflow to add an issue automatically or manually.
 
 ## Granting permission to the action via `token`
 To grant access to projects and issues you need to pass either a `Personal Access Token (PAT)` or an `APP Token`. At the moment `fine grained tokens` are not supported.
