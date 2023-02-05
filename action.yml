@@ -1,0 +1,29 @@
+name: add-issue-to-project
+description: add an issue to a project
+inputs:
+  repo:
+    required: false
+    default: ${{ github.repository }}
+  token:
+    required: true
+    default: ${{ github.token }}  
+  org:
+    required: false
+    default: ${{ github.repository_owner }}
+  issue-id:
+    required: false
+    default: ''
+  issue-number:
+    required: false
+    default: 0
+  pid:
+    required: true
+    default: 1
+
+  
+outputs:
+  members:
+    description: members
+runs:
+  using: "node16"
+  main: src/index.js
