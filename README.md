@@ -44,7 +44,7 @@ To grant access to projects and issues you need to pass either a `Personal Acces
 ```
 
 ## Output
-NA
+N/A
 
 ## Examples
 
