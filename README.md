@@ -5,8 +5,6 @@ This action can add an issue to a project by passing either `issue ID` or `issue
 ## Giving permission to the action via `token`
 To grant access to projects and issues you need to pass either a `Personal Access Token (PAT)` or an `APP Token`. At the moment `fine grained tokens` are not supported.
 
-## Alternative action
-[add-to-project](https://github.com/actions/add-to-project) is also support such a functionality but it does not support adding an issue with issue_id and issue_number.
 
 
 ## Action Parameters
